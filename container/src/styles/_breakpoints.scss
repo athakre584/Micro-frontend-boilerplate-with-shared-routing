@@ -1,0 +1,43 @@
+/* mixins */
+
+@mixin portrait-phones {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+@mixin tablet-pro {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+
+@mixin large-devices {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin extra-large-devices {
+  @media (min-width: 1900px) {
+    @content;
+  }
+}
+
+@mixin ipad-pro-devices {
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}

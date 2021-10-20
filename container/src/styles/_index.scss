@@ -1,0 +1,19 @@
+// Note: Import ordering important here ↴
+@import './config/vars';
+@import './config/colors';
+@import './extensions';
+@import './mixins';
+@import './typography';
+@import './breakpoints';
+
+.dashboard__navigation {
+  @include tablet-pro {
+    position: fixed !important;
+    z-index: 99999;
+    top: 0px;
+    background-color: $mt-white;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    min-height: 100vh !important;
+  }
+}

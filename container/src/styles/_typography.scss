@@ -1,0 +1,47 @@
+// =============================================================================
+// Font Face
+// =============================================================================
+
+//@import '../static/fonts/Roboto-Regular.ttf';
+// h1 {
+//   font-weight: inherit;
+// }
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'),
+    url('static/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin Roboto-Regular {
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: local('WorkSans-Regular'),
+    url('static/fonts/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin WorkSans-Regular {
+  font-family: 'WorkSans-Regular', sans-serif;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: local('Poppins-Regular'),
+    url('static/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin Poppins-Regular {
+  font-family: 'Poppins-Regular', sans-serif;
+}

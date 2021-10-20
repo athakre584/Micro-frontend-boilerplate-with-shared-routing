@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mt-hrms-ui-container
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mt-hrms-ui-container
+  template:
+    metadata:
+      labels:
+        app: mt-hrms-ui-container
+    spec:
+      containers:
+      - name: mt-hrms-ui-container
+        image: 613929911702.dkr.ecr.us-east-2.amazonaws.com/mt-hrms-ui:1.0.0
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mt-hrms-ui-container
+  namespace: dev
+spec:
+  selector:
+    app: mt-hrms-ui-container
+  ports:
+  - name: http
+    protocol: TCP
+    port: 9000
+    targetPort: 80
+  type: LoadBalancer

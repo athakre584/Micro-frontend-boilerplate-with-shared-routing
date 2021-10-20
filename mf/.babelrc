@@ -1,0 +1,9 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"], //runs ES6,ES7,ES8
+  "plugins": [
+    "@babel/transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    "transform-class-properties",
+    "istanbul"
+  ]
+}
