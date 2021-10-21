@@ -81,7 +81,7 @@ module.exports = {
       'process.env': JSON.stringify(process.env),
     }),
     new ModuleFederationPlugin({
-      name: 'onboarding',
+      name: 'mf',
       filename: 'remoteEntry.js',
       remotes: {
         shell: `shell@${process.env.CONTAINER_HOST}/remoteEntry.js`,

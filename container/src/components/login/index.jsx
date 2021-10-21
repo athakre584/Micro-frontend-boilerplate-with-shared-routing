@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HRLogin = () => {
+const Login = () => {
   return <div>Login</div>;
 };
-export default HRLogin;
+export default Login;
