@@ -61,8 +61,8 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 2,
-              sourceMap: true,
+              importLoaders: 1,
+              modules: true, //CSS modules integration for component level stylesheets
             },
           },
           {
@@ -105,7 +105,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      title: ' Dashboard',
+      title: 'Container',
     }),
   ],
   output: {
