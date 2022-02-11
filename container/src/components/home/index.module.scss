@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
 // variables
 $darkPurple: #00106a;
 $lightBlue: #dfe9ff;
 $activeBlue: #4b71ff;
 $white: #ffffff;
 $lightPurple: #989dc5;
+$color-primary: #1c262b;
+
+$bp-s: 43.75em; //700px;
+$bp-xs: 34.375em; //550px;
 
 // mixins
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
@@ -67,8 +74,6 @@ nav {
 
 
 .login_btn {
-  // @include OpenSans-semibold;
-
   height: 48px;
   background: $activeBlue;
   border-radius: 8px;
@@ -79,8 +84,6 @@ nav {
 }
 
 .login_btn_header {
-  // @include OpenSans-semibold;
-
   height: 40px;
   width: 120px;
   background: $activeBlue;
@@ -100,7 +103,6 @@ nav {
   width: 100%;
   position: relative;
   z-index: 1;
-  // background-color: #000000;
   @media (min-width: 768px) {
     height: 450px;
     margin-bottom: 32px;
@@ -169,96 +171,6 @@ nav {
 }
 }
 
-$bp-s: 43.75em; //700px;
-$bp-xs: 34.375em; //550px;
-$color-primary: #1c262b;
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
-.three-point-section{
-  margin: 0 auto;
-  width: 90%;
-  max-width: 900px;
-}
-.section_primary{
-  background: grey;
-  color: white;
-}
-.features{
-  text-align: center;
-  padding: 1rem;
-
-  &:hover{
-    background: rgba(white,.1);
-  }
-  
-  @media (max-width: $bp-s){
-    width: 100%;
-    margin: 0;
-    text-align: left;
-    border-bottom: 1px solid rgba(white,.2);
-
-    &:last-child{
-      border: none;
-    }
-  }
-  
-  i{
-    font-size: 4rem;
-    margin: 0 0 2rem 0;
-
-    @media (max-width: $bp-s){
-      font-size: 1.5rem;
-      width: 2rem;
-      text-align: center;
-      margin: 0 0 1rem 0;
-      float: left;
-    }
-  }
-
-  p{
-    margin: 0 0 1rem 0;
-    font-size: 1rem;
-
-    @media (max-width: $bp-s){
-      margin-left: 3rem;
-    }
-  }
-}
-
-
-// footer styles
-footer{
-  background: #000000;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
-  font-size: .8rem;
-  color: rgba(white,.4);
-
-  ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    li{
-      display: inline-block;
-
-      a{
-        display: block;
-        padding: .4rem .7rem;
-        font-size: .9rem;
-        text-decoration: none;
-        color: rgba(white,.7);
-
-        &:hover{
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
 *,
 *::before,
 *::after {
@@ -268,7 +180,6 @@ footer{
 h1 {
   font-size: 24px;
   font-weight: 400;
-  // text-align: center;
 }
 
 img {
@@ -368,4 +279,88 @@ font-weight: 400;
 font-size: 13px;
 margin-top: 35px;
 text-align: center;
+}
+
+.three-point-section{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+.section_primary{
+  background: grey;
+  color: white;
+}
+.features{
+  text-align: center;
+  padding: 1rem;
+
+  &:hover{
+    background: rgba(white,.1);
+  }
+  
+  @media (max-width: $bp-s){
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(white,.2);
+
+    &:last-child{
+      border: none;
+    }
+  }
+  
+  i{
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+
+    @media (max-width: $bp-s){
+      font-size: 1.5rem;
+      width: 2rem;
+      text-align: center;
+      margin: 0 0 1rem 0;
+      float: left;
+    }
+  }
+
+  p{
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+
+    @media (max-width: $bp-s){
+      margin-left: 3rem;
+    }
+  }
+}
+
+
+// footer styles
+footer{
+  background: #000000;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: .8rem;
+  color: rgba(white,.4);
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: inline-block;
+
+      a{
+        display: block;
+        padding: .4rem .7rem;
+        font-size: .9rem;
+        text-decoration: none;
+        color: rgba(white,.7);
+
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
 }

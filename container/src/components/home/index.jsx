@@ -1,5 +1,4 @@
 import React from 'react';
-
 import styles from './index.module.scss';
 import globalStyles from '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import mfImage from '../../static/assets/images/mfe.jpg';
@@ -24,9 +23,7 @@ const Home = () => {
             <p><strong>Container Application</strong></p>
             <button>Get Started</button>
           </div>
-          {/* <img className={styles.banner_image} src={bgImage} alt="monitoring" /> */}
         </div>
-
         <div className={styles.card}>
           <div className={`${globalStyles['row']}`}>
             <div className={`${globalStyles['col-md-4']}`}>
