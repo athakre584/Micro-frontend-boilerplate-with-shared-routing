@@ -62,7 +62,10 @@ module.exports = {
             loader: 'css-loader',
             options: {
               importLoaders: 1,
-              modules: true, //CSS modules integration for component level stylesheets
+              modules: {
+                //CSS modules integration for component level stylesheets
+                localIdentName: '[local]___[hash:base64:5]',
+              },
             },
           },
           {
