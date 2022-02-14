@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import globalStyles from '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import mfImage from '../../static/assets/images/mfe.jpg';
 import { Link } from 'react-router-dom';
+import architectureImage from '../../static/assets/images/architecture.png';
 
 const Home = () => {
   return (
@@ -44,7 +45,14 @@ const Home = () => {
           <div className={styles.banner_text}>
             <h1>Welcome to Microfrontend Boiler Plate</h1>
             <p><strong>Container Application</strong></p>
-            <button>Get Started</button>
+          </div>
+        </div>
+        <div className={styles.arch}>
+          <div className={`${globalStyles['card']} ${globalStyles['bg-dark']} text-white`} >
+            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..."/>
+            <div className={`${globalStyles['card-img-overlay']}`}>
+              <h5 className={`${globalStyles['card-title']}`}>Microfrontend Architecture</h5>
+            </div>
           </div>
         </div>
         <div className={styles.card}>
