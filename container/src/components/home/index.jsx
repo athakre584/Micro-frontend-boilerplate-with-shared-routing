@@ -2,44 +2,14 @@ import React from 'react';
 import styles from './index.module.scss';
 import globalStyles from '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import mfImage from '../../static/assets/images/mfe.jpg';
-import { Link } from 'react-router-dom';
 import architectureImage from '../../static/assets/images/architecture.png';
+import Header from '../header/header';
+import Footer from '../footer/footer';
 
 const Home = () => {
   return (
     <div>
-      <div className={styles.page_header}>
-        <header>
-          <div>
-            <nav className={`${globalStyles['navbar']} ${globalStyles['navbar-expand-sm']} custom-navbar`}>
-              <div className={`${globalStyles['container']}`}>
-                <div
-                  className={`${globalStyles['collapse']} ${globalStyles['navbar-collapse']}`}
-                  id={`${globalStyles['navbarSupportedContent']}`}
-                >
-                  <ul className={`${globalStyles['navbar-nav']} ${globalStyles['ml-auto']}`}>
-                    <li className={`${globalStyles['nav-item active']}`}>
-                      <Link className={`${globalStyles['nav-link']}`} to="/home">
-                        {'Home'}
-                      </Link>
-                    </li>
-                    <li className={`${globalStyles['nav-item']}`}>
-                      <Link className={`${globalStyles['nav-link']}`} to="/about-us">
-                        {'About Us'}
-                      </Link>
-                    </li>
-                    <li className={`${globalStyles['nav-item']}`}>
-                      <Link className={`${globalStyles['nav-link']}`} to="/contact-us ">
-                        {'Contact Us'}
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </header>
-      </div>
+      { <Header />}
       <div className={styles.landing_page}>
         <div className={styles.banner_section}>
           <div className={styles.banner_text}>
@@ -115,17 +85,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <footer>
-          <div className={styles.container}>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <p>&copy; 2022 MicrofrontEnd Boilerplate. All rights reserved.</p>
-          </div>
-        </footer>
       </div>
+      { <Footer />}
     </div>
   );
 };

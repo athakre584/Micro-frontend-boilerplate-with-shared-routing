@@ -1,0 +1,25 @@
+// navigation styling
+.page_header{
+    header {
+      .navbar {
+        height: 75px;
+        width: 100%;
+        padding: 0;
+        background-color: #ffffff !important;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
+    
+        .navbar-nav {
+          li {
+            margin-left: 40px;
+            a {
+              font-size: 14px;
+              line-height: 27px;
+              border-radius: 8px;
+              color: #707070;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
