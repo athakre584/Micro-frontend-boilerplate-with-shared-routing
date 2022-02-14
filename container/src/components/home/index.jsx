@@ -45,7 +45,6 @@ const Home = () => {
           <div className={styles.banner_text}>
             <h1>Welcome to Microfrontend Boiler Plate</h1>
             <p><strong>Container Application</strong></p>
-            <button>Get Started</button>
           </div>
         </div>
         <div className={styles.arch}>
