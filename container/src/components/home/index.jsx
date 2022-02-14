@@ -17,15 +17,7 @@ const Home = () => {
             <p><strong>Container Application</strong></p>
           </div>
         </div>
-        <div className={styles.arch}>
-          <div className={`${globalStyles['card']} ${globalStyles['bg-dark']} text-white`} >
-            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..."/>
-            <div className={`${globalStyles['card-img-overlay']}`}>
-              <h5 className={`${globalStyles['card-title']}`}>Microfrontend Architecture</h5>
-            </div>
-          </div>
-        </div>
-        <div className={styles.card}>
+        <div className={styles.cards_section}>
           <div className={`${globalStyles['row']}`}>
             <div className={`${globalStyles['col-md-4']}`}>
               <div className={styles.cards_item}>
@@ -33,7 +25,7 @@ const Home = () => {
                   <div className={styles.card_image}><img src={mfImage} alt=""/></div>
                   <div className={styles.card_content}>
                     <h2 className={styles.card_title}>What is microfrontend?</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
                     <button className={styles.btn}>Read More</button>
                   </div>
                 </div>
@@ -45,7 +37,7 @@ const Home = () => {
                   <div className={styles.card_image}><img src={mfImage} alt="container"/></div>
                   <div className={styles.card_content}>
                     <h2 className={styles.card_title}>What is container?</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <p className={styles.card_text}>Demo of pixel perfect pure CSS</p>
                     <button className={styles.btn}>Read More</button>
                   </div>
                 </div>
@@ -56,12 +48,20 @@ const Home = () => {
                 <div className={styles.card}>
                   <div className={styles.card_image}><img src={mfImage}/></div>
                   <div className={styles.card_content}>
-                    <h2 className={styles.card_title}>Concepts behind Microfrontend</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+                    <h2 className={styles.card_title}>Concepts behind MFE</h2>
+                    <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
                     <button className={styles.btn}>Read More</button>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.architect_section}>
+          <div className={`${globalStyles['card']} ${globalStyles['bg-dark']} text-white`} >
+            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..."/>
+            <div className={`${globalStyles['card-img-overlay']}`}>
+              <h5 className={`${globalStyles['card-title']}`}>Microfrontend Architecture</h5>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const Home = () => {
             <div className={styles.features}>
               <i className="fa fa-heart"></i>
               <p>
-     Still curious?  Find out more by clicking on the link.
+                Still curious?  Find out more by clicking on the link.
               </p>
             </div>
           </div>

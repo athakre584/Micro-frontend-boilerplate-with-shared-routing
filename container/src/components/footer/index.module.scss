@@ -1,32 +1,108 @@
-// footer styles
-footer{
-    background: #000000;
-    color: #fff;
-    padding: 2rem 0;
-    text-align: center;
-    font-size: .8rem;
-    color: rgba(white,.4);
+.page_footer{
+  footer {
+    min-height: 318px;
+    background: #ffffff;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    padding: 40px;
+    color: rgba(0, 0, 0, 0.7);
   
-    ul{
-      margin: 0;
-      padding: 0;
-      list-style: none;
+    .mouritech_address {
+      font-size: 14px;
+      .footer_logo {
+        margin-bottom: 27px;
+        height: 30%;
+        width: 30%;
+      }
+      address {
+        margin-bottom: 26px;
+      }
+    }
   
-      li{
-        display: inline-block;
+    .footer_heading {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 30px;
+      margin-top: 13px;
+    }
   
-        a{
-          display: block;
-          padding: .4rem .7rem;
-          font-size: .9rem;
-          text-decoration: none;
-          color: rgba(white,.7);
+    .footer_links {
+      li {
+        font-size: 14px;
+        a {
+          padding-left: 0;
+          color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
   
-          &:hover{
-            color: white;
+    .social_para {
+      font-size: 14px;
+      text-align: center;
+      max-width: 162px;
+      padding-top: 8px;
+    }
+  
+    .social_icons {
+      margin-top: 30px;
+      li {
+        padding-right: 10px;
+        a {
+          padding: 0;
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
+      }
+    }
+  
+    .custom_hr {
+      border: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    .footer_bottom {
+      text-align: center;
+      .copyright_para {
+        padding-top: 21px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .social_icons {
+      li {
+        a {
+          img {
+            height: 25px !important;
+            width: 25px !important;
           }
         }
       }
     }
   }
+
+  @media (min-width: 768px) {
+    footer {
+      padding: 15px 0 !important;
+  
+      .footer_heading {
+        margin-bottom: 19px;
+      }
+  
+      #our_social_network {
+        margin-bottom: 0;
+      }
+  
+      .social_para {
+        text-align: inherit;
+      }
+    }
+  }
+}
+
+
   
