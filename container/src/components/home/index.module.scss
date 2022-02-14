@@ -50,6 +50,11 @@ $bp-xs: 34.375em; //550px;
   }
 }
 
+.arch{
+  background: #fff !important;
+  padding: 25px 200px;
+}
+
 // banner styles
 .banner_section {
   background-image: url("../../static/assets/images/bg-image.jpg");
@@ -319,3 +324,4 @@ footer{
     }
   }
 }
+
