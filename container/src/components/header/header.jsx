@@ -8,28 +8,28 @@ const Header = () => {
   return (
     <header>
       <div>
-        <nav className={`${globalStyles['navbar']} ${globalStyles['navbar-expand-sm']} ${globalStyles['custom-navbar']} `}>
+        <nav className={`${styles.nav_bar} ${globalStyles['navbar']} ${globalStyles['navbar-expand-sm']} ${globalStyles['custom-navbar']} `}>
           <div className={`${globalStyles['container']}`}>
-            <div className={styles.logo}>
-              <img alt="logo" src={logo} />
+            <div className={`${globalStyles['brand-logo']}`}>
+              <Link to="/home"><img className={styles.logo} alt="logo" src={logo} /></Link>
             </div>
             <div
               className={`${globalStyles['collapse']} ${globalStyles['navbar-collapse']}`}
               id={`${globalStyles['navbarSupportedContent']}`}
             >
-              <ul className={`${globalStyles['navbar-nav']} ${globalStyles['ml-auto']}`}>
-                <li className={`${globalStyles['nav-item']} active`}>
-                  <Link className={`${globalStyles['nav-link']}`} to="/home">
+              <ul className={`${styles.navbar_nav} ${globalStyles['navbar-nav']} ${globalStyles['ml-auto']}`}>
+                <li className={`${styles.nav_item} ${globalStyles['nav-item']} `}>
+                  <Link className={`${styles.nav_link} ${globalStyles['nav-link']} `} to="/home">
                     {'Home'}
                   </Link>
                 </li>
-                <li className={`${globalStyles['nav-item']}`}>
-                  <Link className={`${globalStyles['nav-link']}`} to="/about-us">
+                <li className={`${styles.nav_item} ${globalStyles['nav-item']}`}>
+                  <Link className={`${styles.nav_link} ${globalStyles['nav-link']}`} to="/about-us">
                     {'About Us'}
                   </Link>
                 </li>
-                <li className={`${globalStyles['nav-item']}`}>
-                  <Link className={`${globalStyles['nav-link']}`} to="/contact-us ">
+                <li className={`${styles.nav_item} ${globalStyles['nav-item']}`}>
+                  <Link className={`${styles.nav_link} ${globalStyles['nav-link']}`} to="/contact-us ">
                     {'Contact Us'}
                   </Link>
                 </li>

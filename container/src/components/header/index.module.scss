@@ -1,26 +1,28 @@
 header {
   .logo{
-    height: 45px;
-    width: 45px;
+    height: 55px;
+    width: 55px;
   }
 
-  .navbar {
+  .nav_bar {
     height: 75px;
     width: 100%;
     padding: 0;
     background-color: #ffffff !important;
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.12);
 
-    .navbar-nav {
-      li {
-        margin-left: 40px;
-        a {
-          font-size: 14px;
+    .navbar_nav {
+      .nav_item {
+         margin-left: 40px;
+        .nav_link {
           line-height: 27px;
           border-radius: 8px;
-          color: #707070;
+          color: black;
           vertical-align: middle;
-        }
+          &:hover{
+            color: blue;
+           }
+        } 
       }
     }
   }

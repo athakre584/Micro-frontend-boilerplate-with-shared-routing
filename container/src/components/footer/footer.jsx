@@ -62,22 +62,22 @@ const Footer = () => {
               <ul className={`${styles.social_icons} ${globalStyles['nav']}`}>
                 <li className={`${globalStyles['nav-item']}`}>
                   <Link className={`${globalStyles['nav-link']}`} to=" ">
-                    <img src={twitter} alt="twitter" className={`${globalStyles['imgfluid']}`} />
+                    <img src={twitter} alt="twitter" className={`${globalStyles['img-fluid']}`} />
                   </Link>
                 </li>
                 <li className={`${globalStyles['nav-item']}`}>
                   <Link className={`${globalStyles['nav-link']}`} to=" ">
-                    <img src={skype} alt="skype" className={`${globalStyles['imgfluid']}`}/>
+                    <img src={skype} alt="skype" className={`${globalStyles['img-fluid']}`}/>
                   </Link>
                 </li>
                 <li className={`${globalStyles['nav-item']}`}>
                   <Link className={`${globalStyles['nav-link']}`} to=" ">
-                    <img src={linkedIn} alt="linkedin" className={`${globalStyles['imgfluid']}`}/>
+                    <img src={linkedIn} alt="linkedin" className={`${globalStyles['img-fluid']}`}/>
                   </Link>
                 </li>
                 <li className={`${globalStyles['nav-item']}`}>
                   <Link className={`${globalStyles['nav-link']}`} to=" ">
-                    <img src={facebook} alt="facebook" className={`${globalStyles['imgfluid']}`} />
+                    <img src={facebook} alt="facebook" className={`${globalStyles['img-fluid']}`} />
                   </Link>
                 </li>
               </ul>

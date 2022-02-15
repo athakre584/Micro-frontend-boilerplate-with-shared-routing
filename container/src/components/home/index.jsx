@@ -9,7 +9,7 @@ import Footer from '../footer/footer';
 const Home = () => {
   return (
     <div>
-      { <Header />}
+      {<Header />}
       <div className={styles.landing_page}>
         <div className={styles.banner_section}>
           <div className={styles.banner_text}>
@@ -22,7 +22,7 @@ const Home = () => {
             <div className={`${globalStyles['col-md-4']}`}>
               <div className={styles.cards_item}>
                 <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage} alt=""/></div>
+                  <div className={styles.card_image}><img src={mfImage} alt="" /></div>
                   <div className={styles.card_content}>
                     <h2 className={styles.card_title}>What is microfrontend?</h2>
                     <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
@@ -34,7 +34,7 @@ const Home = () => {
             <div className={`${globalStyles['col-md-4']}`}>
               <div className={styles.cards_item}>
                 <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage} alt="container"/></div>
+                  <div className={styles.card_image}><img src={mfImage} alt="container" /></div>
                   <div className={styles.card_content}>
                     <h2 className={styles.card_title}>What is container?</h2>
                     <p className={styles.card_text}>Demo of pixel perfect pure CSS</p>
@@ -46,7 +46,7 @@ const Home = () => {
             <div className={`${globalStyles['col-md-4']}`}>
               <div className={styles.cards_item}>
                 <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage}/></div>
+                  <div className={styles.card_image}><img src={mfImage} /></div>
                   <div className={styles.card_content}>
                     <h2 className={styles.card_title}>Concepts behind MFE</h2>
                     <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
@@ -59,7 +59,7 @@ const Home = () => {
         </div>
         <div className={styles.architect_section}>
           <div className={`${globalStyles['card']} ${globalStyles['bg-dark']} text-white`} >
-            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..."/>
+            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..." />
             <div className={`${globalStyles['card-img-overlay']}`}>
               <h5 className={`${globalStyles['card-title']}`}>Microfrontend Architecture</h5>
             </div>
@@ -86,7 +86,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      { <Footer />}
+      {<Footer />}
     </div>
   );
 };
