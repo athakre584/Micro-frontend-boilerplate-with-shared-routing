@@ -23,19 +23,13 @@ $bp-xs: 34.375em; //550px;
   font-family: Lato, sans-serif;
 
   .architect_section{
-    background: $lightBlue !important;
     margin-top: 10px;
-    padding: 25px 200px;
+    background: #E8E9EE;
   }
 
   // banner styles
   .banner_section {
     background-image: url("../../static/assets/images/bg-image.jpg");
-    height: auto;
-    display: flex;
-    width: 100%;
-    position: relative;
-    z-index: 1;
 
     @media (min-width: 768px) {
       height: 450px;
@@ -95,7 +89,7 @@ $bp-xs: 34.375em; //550px;
       
     .features{
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
   
       &:hover{
         background: rgba(white,.1);

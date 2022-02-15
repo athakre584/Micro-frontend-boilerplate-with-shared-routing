@@ -17,6 +17,23 @@ const Home = () => {
             <p><strong>Container Application</strong></p>
           </div>
         </div>
+        <div className={styles.architect_section}>
+          <div className={`${globalStyles['container']}`}>
+            <div className={`${globalStyles['row']}`}>
+              <div className={`${globalStyles['col-lg-6']}`}>
+                <img className={`${globalStyles['w-150']} ${globalStyles['shadow']} ${globalStyles['p-3']} ${globalStyles['mt-5']}`} src={architectureImage} />
+              </div>
+              <div className={`${globalStyles['col-lg-6']}`}>
+                <div className={`${globalStyles['p-5']} ${globalStyles['mt-4']}`}>
+                  <h1 className={`${globalStyles['display-4']}`}>Microfrontend Architecture</h1>
+                  <p className={styles.lead}>Crows nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+                  <a href="#" className={`${globalStyles['btn']} ${globalStyles['btn-outline-dark']}`}>Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className={styles.cards_section}>
           <div className={`${globalStyles['row']}`}>
             <div className={`${globalStyles['col-md-4']}`}>
@@ -57,31 +74,30 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className={styles.architect_section}>
-          <div className={`${globalStyles['card']} ${globalStyles['bg-dark']} text-white`} >
-            <img src={architectureImage} className={`${globalStyles['card-img']}`} alt="..." />
-            <div className={`${globalStyles['card-img-overlay']}`}>
-              <h5 className={`${globalStyles['card-title']}`}>Microfrontend Architecture</h5>
-            </div>
-          </div>
-        </div>
         <div className={styles.section_primary}>
           <div className={styles.three_point_section}>
-            <div className={styles.features}>
-              <i className="fa fa-bolt"></i>
-              <p> Say cool stuff here</p>
-            </div>
-
-            <div className={styles.features}>
-              <i className="fa fa-bank"></i>
-              <p>This is why its great.  Heres the one thing you should know about the microfrontend.
-              </p>
-            </div>
-            <div className={styles.features}>
-              <i className="fa fa-heart"></i>
-              <p>
-                Still curious?  Find out more by clicking on the link.
-              </p>
+            <div className={`${globalStyles['row']}`}>
+              <div className={`${globalStyles['col-md-4']}`}>
+                <div className={styles.features}>
+                  <i className="fa fa-bolt"></i>
+                  <p> Say cool stuff here</p>
+                </div>
+              </div>
+              <div className={`${globalStyles['col-md-4']}`}>
+                <div className={styles.features}>
+                  <i className="fa fa-bank"></i>
+                  <p>This is why its great.  Heres the one thing you should know about the microfrontend.
+                  </p>
+                </div>
+              </div>
+              <div className={`${globalStyles['col-md-4']}`}>
+                <div className={styles.features}>
+                  <i className="fa fa-heart"></i>
+                  <p>
+                  Still curious?  Find out more by clicking on the link.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
