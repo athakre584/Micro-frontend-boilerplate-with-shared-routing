@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './index.module.scss';
+import styles from './dashboard.module.scss';
 
 const Dashboard = () => {
   return (
     <div>
       <nav>
         <div className={styles.logo}>
-          <div className={styles.arrow_down}></div>
+          <div className={styles.arrow_down} />
         </div>
         <ul>
           <li>
@@ -37,9 +37,9 @@ const Dashboard = () => {
       </div>
 
       <div className={styles.info_section}>
-        <div className={`${styles['container']}`}>
+        <div className={`${styles.container}`}>
           <h1 className={styles.info_heading}>What We Do?</h1>
-          <div className={`${styles['row']}`}>
+          <div className={`${styles.row}`}>
             <div className={`${styles['col-md-4']}`}>
               <div className={styles.main}>
                 <div className={styles.service}>
@@ -48,9 +48,9 @@ const Dashboard = () => {
                   </div>
                   <h4>App Design</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-                    molestiae ducimus laborum voluptate quisquam adipisci aut tempore
-                    cum iste nesciunt repudiandae sapiente, et suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae
+                    ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt
+                    repudiandae sapiente, et suscipit.
                   </p>
                 </div>
               </div>
@@ -64,9 +64,9 @@ const Dashboard = () => {
                   </div>
                   <h4>Development</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-                    molestiae ducimus laborum voluptate quisquam adipisci aut tempore
-                    cum iste nesciunt repudiandae sapiente, et suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae
+                    ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt
+                    repudiandae sapiente, et suscipit.
                   </p>
                 </div>
               </div>
@@ -80,9 +80,9 @@ const Dashboard = () => {
                   </div>
                   <h4>Marketing</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat
-                    molestiae ducimus laborum voluptate quisquam adipisci aut tempore
-                    cum iste nesciunt repudiandae sapiente, et suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat molestiae
+                    ducimus laborum voluptate quisquam adipisci aut tempore cum iste nesciunt
+                    repudiandae sapiente, et suscipit.
                   </p>
                 </div>
               </div>

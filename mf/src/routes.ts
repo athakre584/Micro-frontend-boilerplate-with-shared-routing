@@ -1,5 +1,6 @@
 import React from 'react';
-const Dashboard = React.lazy(() => import('GlobalComponents/dashboard'));
+// import Dashboard from './components/dashboard/dashboard';
+const Dashboard = React.lazy(() => import('./components/dashboard/dashboard'));
 
 const routes = [
   {

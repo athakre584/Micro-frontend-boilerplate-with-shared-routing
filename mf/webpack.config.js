@@ -3,6 +3,7 @@ const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlug
 const path = require('path');
 const deps = require('./package.json').dependencies;
 const webpack = require('webpack');
+const isProductionBuild = false;
 /**
  * dotenv here is only used when running `npm run build && npm run start` outside of Docker
  * it could potentially be removed
@@ -10,7 +11,7 @@ const webpack = require('webpack');
 require('dotenv').config();
 
 module.exports = {
-  entry: './src/index',
+  entry: './src/index.ts',
   mode: 'development',
   devtool: 'source-map',
   devServer: {
@@ -30,25 +31,16 @@ module.exports = {
       Helpers: path.resolve(__dirname, './src/utils/helpers'),
       Svg: path.resolve(__dirname, './src/static/images/svg'),
     },
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.tsx', '.ts'],
   },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        type: 'javascript/auto',
-        resolve: {
-          fullySpecified: false,
-        },
-      },
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
+        test: /\.(ts|tsx)$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        options: {
-          presets: ['@babel/preset-react'],
-        },
       },
+
       {
         test: /\.(jpg|png|woff|woff2|eot|ttf|svg)$/,
         use: {
@@ -56,7 +48,7 @@ module.exports = {
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.s?css$/,
         use: [
           'style-loader',
           {

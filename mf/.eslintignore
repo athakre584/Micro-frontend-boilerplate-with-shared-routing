@@ -1,6 +1,0 @@
-node_modules
-src/static/
-server.js
-cypress/
-**/*.spec.js
-**/*.test.js

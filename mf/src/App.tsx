@@ -1,4 +1,5 @@
 import React from 'react';
+// @ts-ignore
 const Shell = React.lazy(() => import('shell/Shell'));
 
 function App() {
