@@ -77,6 +77,15 @@ $bp-xs: 34.375em; //550px;
     }
   }
 
+  .mission{
+    margin-top: 10px;
+    text-align: center;
+    padding: 50px 50px;
+    align-items: center;
+    background: lightblue;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
+  }
+
   .section_primary{
     background: grey;
     color: white;
