@@ -37,42 +37,42 @@ const Home = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className={styles.cards_section}>
-          <div className={`${globalStyles['row']}`}>
-            <div className={`${globalStyles['col-md-4']}`}>
-              <div className={styles.cards_item}>
-                <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage} alt="image" /></div>
-                  <div className={styles.card_content}>
-                    <h2 className={styles.card_title}>What is microfrontend?</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
-                    <button className={styles.btn}>Read More</button>
+            <div className={styles.cards_section}>
+              <div className={`${globalStyles['row']}`}>
+                <div className={`${globalStyles['col-md-4']}`}>
+                  <div className={styles.cards_item}>
+                    <div className={styles.card}>
+                      <div className={styles.card_image}><img src={mfImage} alt="image" /></div>
+                      <div className={styles.card_content}>
+                        <h2 className={styles.card_title}>What is microfrontend?</h2>
+                        <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
+                        <button className={styles.btn}>Read More</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={`${globalStyles['col-md-4']}`}>
-              <div className={styles.cards_item}>
-                <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage} alt="image" /></div>
-                  <div className={styles.card_content}>
-                    <h2 className={styles.card_title}>What is container?</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS</p>
-                    <button className={styles.btn}>Read More</button>
+                <div className={`${globalStyles['col-md-4']}`}>
+                  <div className={styles.cards_item}>
+                    <div className={styles.card}>
+                      <div className={styles.card_image}><img src={mfImage} alt="image" /></div>
+                      <div className={styles.card_content}>
+                        <h2 className={styles.card_title}>What is container?</h2>
+                        <p className={styles.card_text}>Demo of pixel perfect pure CSS</p>
+                        <button className={styles.btn}>Read More</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={`${globalStyles['col-md-4']}`}>
-              <div className={styles.cards_item}>
-                <div className={styles.card}>
-                  <div className={styles.card_image}><img src={mfImage}  alt="image"/></div>
-                  <div className={styles.card_content}>
-                    <h2 className={styles.card_title}>Concepts behind MFE</h2>
-                    <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
-                    <button className={styles.btn}>Read More</button>
+                <div className={`${globalStyles['col-md-4']}`}>
+                  <div className={styles.cards_item}>
+                    <div className={styles.card}>
+                      <div className={styles.card_image}><img src={mfImage}  alt="image"/></div>
+                      <div className={styles.card_content}>
+                        <h2 className={styles.card_title}>Concepts behind Microfrontend</h2>
+                        <p className={styles.card_text}>Demo of pixel perfect pure CSS </p>
+                        <button className={styles.btn}>Read More</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
