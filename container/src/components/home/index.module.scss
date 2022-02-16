@@ -12,23 +12,17 @@ $color-primary: #1c262b;
 $bp-s: 43.75em; //700px;
 $bp-xs: 34.375em; //550px;
 
-// mixins
-@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-    -webkit-box-shadow:$top $left $blur $color #{$inset};
-    -moz-box-shadow:$top $left $blur $color #{$inset};
-    box-shadow:$top $left $blur $color #{$inset};
-}
-
 .landing_page {
+  background-color: #ffffff;
   font-family: Lato, sans-serif;
 
   .architect_section{
     margin-top: 10px;
     padding: 10px;
     background: #E8E9EE;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
   }
 
-  // banner styles
   .banner_section {
     background-image: url("../../static/assets/images/bg-image.jpg");
 
