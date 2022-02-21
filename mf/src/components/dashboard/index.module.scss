@@ -1,3 +1,6 @@
+@import '../../styles/config/colors';
+@import '../../styles/mixins';
+
 .dashboard_page {
   .banner_section {
     background-image: url('../../static/assets/images/bg-image.png');
@@ -34,14 +37,14 @@
       padding-top: 50px;
       padding-left: 125px;
       h1 {
-        color: #ffffff;
+        color: $white;
         font-size: 3rem;
         font-weight: 700;
         letter-spacing: 3px;
         margin-bottom: 1rem;
       }
       p {
-        color: #ffffff;
+        color: $white;
         font-size: 1.05rem;
         line-height: 1.75;
       }
@@ -55,7 +58,7 @@
     background: darkslategray !important;
     h1 {
       text-align: center;
-      color: #fff;
+      color: $white;
       text-transform: uppercase;
       margin-bottom: 80px;
     }
@@ -67,7 +70,7 @@
       cursor: pointer;
     }
     .service {
-      background: #fff;
+      background: $white;
       padding: 30px;
       border-radius: 10px;
       position: absolute;
@@ -81,7 +84,7 @@
       height: 130px;
       border-radius: 50%;
       margin: -90px auto 0;
-      background: #fff;
+      background: $white;
       border: 18px solid darkslategray;
       display: flex;
       justify-content: center;
@@ -91,7 +94,7 @@
       height: 35px;
       width: 80%;
       margin: 50px auto;
-      background: #fff;
+      background: $white;
       position: relative;
     }
     .service h4::after,
@@ -103,12 +106,12 @@
       z-index: -1;
     }
     .service h4::after {
-      background: linear-gradient(to right, #fff, grey);
+      background: linear-gradient(to right, $white, grey);
       right: -5px;
       top: -5px;
     }
     .service h4::before {
-      background: linear-gradient(to right, grey, #fff);
+      background: linear-gradient(to right, grey, $white);
       left: -5px;
       bottom: -5px;
     }
@@ -116,7 +119,7 @@
       content: '';
       height: 200px;
       width: 80%;
-      background: #fff;
+      background: $white;
       position: absolute;
       border-radius: 10px;
       bottom: 0;
@@ -129,7 +132,7 @@
       content: '';
       height: 200px;
       width: 64%;
-      background: #fff;
+      background: $white;
       position: absolute;
       border-radius: 10px;
       bottom: 0;

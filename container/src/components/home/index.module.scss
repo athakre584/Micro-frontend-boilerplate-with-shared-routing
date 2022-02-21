@@ -1,19 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
-
-// variables
-$darkPurple: #00106a;
-$lightBlue: #dfe9ff;
-$activeBlue: #4b71ff;
-$white: #ffffff;
-$lightPurple: #989dc5;
-$color-primary: #1c262b;
+@import '../../styles/config/colors';
+@import '../../styles/mixins';
 
 $bp-s: 43.75em; //700px;
 $bp-xs: 34.375em; //550px;
 
 .landing_page {
-  background-color: #ffffff;
+  background-color: $white;
   font-family: Lato, sans-serif;
 
   .architect_section{
@@ -141,7 +134,7 @@ $bp-xs: 34.375em; //550px;
   box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4);
 
   .btn {
-    color: #ffffff;
+    color: $white;
     padding: 0.8rem;
     font-size: 14px;
     text-transform: uppercase;
@@ -203,7 +196,7 @@ $bp-xs: 34.375em; //550px;
     background-color: #000000;
   } 
   .card_title {
-    color: #ffffff;
+    color: $white;
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 1px;
@@ -211,7 +204,7 @@ $bp-xs: 34.375em; //550px;
     margin: 0px;
   }
   .card_text {
-    color: #ffffff;
+    color: $white;
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.25rem;    

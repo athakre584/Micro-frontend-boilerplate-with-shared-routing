@@ -31,7 +31,7 @@ const Home = () => {
               </div>
               <div className={`${globalStyles['col-lg-6']}`}>
                 <div className={`${globalStyles['p-5']} ${globalStyles['mt-4']}`}>
-                  <h1 className={`${globalStyles['display-4']}`}>Microfrontend Architecture</h1>
+                  <h1 className={`${globalStyles['display-4']}`}>Micro Frontend Architecture</h1>
                   <p className={styles.lead}>Crows nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
                   <a href="#" className={`${globalStyles['btn']} ${globalStyles['btn-outline-dark']}`}>Read More</a>
                 </div>
